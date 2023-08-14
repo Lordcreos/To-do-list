@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(    
+        135deg,
+        rgb(42, 248, 241),
+        rgb(16, 223, 255)
+    );
+}
+.title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #a336ce; 
+    margin-top: 20px;
+}
+.container {
+    width: 60%;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#newtask {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+#newtask input {
+    flex: 1;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: none;
+    padding: 8px;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    outline: none;
+}
+
+#newtask button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #2316de;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#newtask button:hover {
+    background-color: #00aaff;
+}
+
+#tasks {
+    margin-top: 20px;
+}
+
+.task {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task span {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.task button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.task button:hover {
+    background-color: #ff6756;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #dedede;
+}
